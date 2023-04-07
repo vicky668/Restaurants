@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   {% load static %}
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Restraunt Management System</title>
+
+   <!-- aos css cdn link-->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+   <!--custom css link-->
+   <link rel="stylesheet" href="{% static 'css/style.css '%}">
+
+   <!---google fonts cdn link-->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;400;500&display=swap" rel="stylesheet">
+
+
+   <!--font awesome link-->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+
+   <!---jquery cd link-->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+   <!---custom js link-->
+   <script src="{% static 'js/script.js' %}"></script>
+</head>
+
+<body>
+   <header>
+  
+      <a href="#" class="logo"><img src="{% static 'images/logo-img.png' %}" alt=""></a>
+
+      <div id="menu-bar" class="fas fa-hamburger"></div>
+
+      <nav class="navbar">
+         <ul>
+
+            <li><a class="active" href="#home">Home</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#popular">Popular</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#order">Order</a></li>
+
+         </ul>
+      </nav>
+
+   </header>
+      <section class="home" id="home">
+      <div class="content" data-aos="fade-right">
+         <h3>Nothing Brings People Together like Good Food</h3>
+         <p>A Restraunt Is A Place Where People Visit To Eat And Drink The Food Being Prepared On The Premises And Pays For The Same.The Food Is Served At The Table To Have A Comfortable Visit For Your Meals.The Restraunt Offers A Menu With Various Options For Your Meal,To Choose Them.</p>
+
+         <a href="#"><button class="btn">Get Started</button></a>
+      </div>
+
+      <div class="image" data-aos="fade-up">
+         <img src="{% static 'images/home-img.png' %}" alt="">
+      </div>
+
+   </section>
+
+   <section class="about" id="about">
+
+      <div class="image" data-aos="fade-right"></div>
+
+      <div class="content"data-aos="fade-left">
+         <h3>A Word About Us</h3>
+         <p>Welcome to Love and Lemons! My name is Jeanine, and I created Love and Lemons to celebrate how nourishing, fun, and delicious cooking with seasonal fruits and vegetables can be. I hope that the recipes here inspire you to try cooking a new vegetable, or try cooking a familiar vegetable in a new way. You’ll find a host of inventive vegetarian recipes for breakfast, lunch, and dinner, but I also want Love and Lemons to be a resource for you. We have guides to working with vegetables ranging from spaghetti squash to asparagus and tips for cooking plant-based basics like quinoa, rice, and lentils.</p>
+
+         <p>And after all those veggies, I always save room for dessert! In my opinion, healthy eating is all about balance, so you’ll find recipes for brownies, cakes, cookies, and more here too.</p>
+
+         <a href="#"><button class="btn">Learn More</button></a>
+      </div>
+   </section>
+   <!---about section ends-->
+
+   <!---menu scetion-->
+   <section class="menu" id="menu">
+
+      <h1 class="heading">Our Delicious <span>Menu</span></h1>
+      <ul class="list" data-aos="fade-down">
+         <li class="btn" data-src="{% static 'images/menu1.jpg' %}" >Breakfast</li>
+         <li class="btn" data-src="{% static 'images/menu2.jpg' %}">Lunch</li>
+         <li class="btn" data-src="{% static 'images/menu3.jpg' %}">Dinner</li>
+         <li class="btn" data-src="{% static 'images/menu4.jpg' %}">Desserts</li>
+      </ul>
+      <div class="row" data-aos="fade-right"> 
+         <div class="image" data-aos="fade-left">
+
+            <img src="{% static 'images/menu3.jpg' %}" id="menu-img" alt="">
+
+
+         </div>
+
+         <div class="content">
+
+            <div class="info">
+
+               <h3><span>01.</span>We Serve Fried Egg For Breakfast</h3>
+               <p>Eggs are Packed Full Of Protein,Vitamins D Helps With Absorption of Minerals and Calcium</p>
+
+            </div>
+            <div class="info">
+
+               <h3><span>02.</span>We Serve Vegetable Sandwitch For Lunch</h3>
+               <p>Richness in Fiber Will Not Only Help You maintain Your weight and avoid bacterial infection,but it will also help you prevent serious diseases such as colon cancer.</p>
+
+            </div>
+            <div class="info">
+
+               <h3><span>03.</span>We Serve Panner Biriyani  For Dinner</h3>
+               <p>Panner is also known as cottage cheese in west.it has lots of health benefits thanks to nutrients it contains.panner has protein,calcium,potassium,magnesium,phosphorous,zin and selenium</p>
+
+            </div>
+            <div class="info">
+
+               <h3><span>04.</span>Also We Serve Desserts</h3>
+               <p>A small dessert consumed daily can be part of healthy diet.</p>
+
+            </div>
+
+         </div>
+
+      </div>
+   </section>
+   <!---menu section end-->
+
+   <!---popular section starts--->
+   <section class="popular" id="popular">
+
+      <h1 class="heading">Most<span>Popular</span>Foods</h1>
+
+      <div class="box-container">
+
+         <div class="box">
+
+            <img src="{% static 'images/product-1.jpg' %}" alt="">
+            <h3>Fried Chicken</h3>
+            <div class="stars">
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+            </div>
+            <div class="price">$17.00</div>
+            <a href="#"><button class="btn">Add to Cart</button></a>
+         </div>
+         <div class="box">
+
+            <img src="{% static 'images/product-2.jpg' %}" alt="">
+            <h3>Mojito</h3>
+            <div class="stars">
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+            </div>
+            <div class="price">$5.12</div>
+            <a href="#"><button class="btn">Add to Cart</button></a>
+         </div>
+         <div class="box">
+
+            <img src="{% static 'images/product-3.jpg' %}" alt="">
+            <h3>Wraps</h3>
+            <div class="stars">
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+            </div>
+            <div class="price">$3.08</div>
+            <a href="#"><button class="btn">Add to Cart</button></a>
+         </div>
+         <div class="box">
+
+            <img src="{% static 'images/product-4.jpg' %}" alt="">
+            <h3>Spaghetti</h3>
+            <div class="stars">
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+            </div>
+            <div class="price">$15.00</div>
+            <a href="#"><button class="btn">Add to Cart</button></a>
+         </div>
+      </div>
+
+   </section>
+   <!--gallery section start-->
+   <section class="gallery" id="gallery">
+
+      <h1 class="heading">Our Food<span>Gallery</span></h1>
+
+      <div class="box-container">
+
+         <div class="box">
+            <img src="{% static 'images/img1.jpg' %}" alt="">
+            <h3>Mix Mithai Plate</h3>
+         </div>
+         <div class="box">
+            <img src="{% static 'images/img2.jpg' %}" alt="">
+            <h3>King Kebab </h3>
+         </div>
+         <div class="box">
+            <img src="{% static 'images/img3.jpg' %}" alt="">
+            <h3>English Breakfast</h3>
+         </div>
+         <div class="box">
+            <img src="{% static 'images/img4.jpg' %}" alt="">
+            <h3>Fried Chicken</h3>
+         </div>
+         <div class="box">
+            <img src="{% static 'images/img5.jpg' %}" alt="">
+            <h3>Fruit Juice</h3>
+         </div>
+         <div class="box">
+            <img src="{% static 'images/img6.jpg' %}" alt="">
+            <h3>Medovik</h3>
+         </div>
+      </div>
+
+   </section>
+   <!--gallery section end-->
+  <section class="order" id="order">
+      <h1 class="heading">Make An <span>Order</span></h1>
+
+      <div class="row">
+
+         <form action="">
+            <input type="text" placeholder="your name" class="box">
+            <input type="email" placeholder="your gmail" class="box">
+            <input type="password" placeholder="your password" class="box">
+            <input type="number" placeholder="your number" class="box">
+            <textarea name="" id="" cols="30" rows="10" class="box address" placeholder="your address"></textarea>
+            <input type="submit" value="Order Now" class="btn">
+         </form>
+      <div class="image">
+            <img src="{% static 'images/form-img.jpg' %}"alt="">
+         </div>
+      </div>
+   </section>
+   <!---footer section-->
+   <div class="footer">
+      <div class="box-container">
+       <div class="box">
+            <h3>Contact Info</h3>
+            <p><i class="fas fa-map-marker-alt"></i>Chennai,india</p>
+            <p><i class="fas fa-envelope"></i>exampl@gmail.com</p>
+            <p><i class="fas fa-phone"></i>+123 456 789</p>
+      </div>
+         <div class="box">
+            <h3>Branch Loactions</h3>
+            <a href="#">india</a>
+            <a href="#">Usa</a>
+            <a href="#">France</a>
+            <a href="#">London</a>
+       </div>
+        <div class="box">
+            <h3>Quick Links</h3>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Menu</a>
+            <a href="#">Popular</a>
+            <a href="#">gallery</a>
+            <a href="#">Order</a>
+         </div>
+         <div class="box">
+            <h3>Follow Us</h3>
+            <a href="#">instagram</a>
+            <a href="#">facebook</a>
+            <a href="#">twitter</a>
+            <a href="#">Linkedin</a>
+          </div>
+   </div>
+   <h1 class="credit">Create By <a href="#">Mr.vicky</a>all rights reserved</h1>
+
+<!---Aos js cdn link-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+<!--initialize aos-->
+<script>
+
+   AOS.init({
+      delay:400,
+      duration:1000
+   })
+
+</script>   
+</body>
+
+</html>
